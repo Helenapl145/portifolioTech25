@@ -18,7 +18,7 @@
 <br>
 
 <p align="center"> 
-    <img alt="Portifólio" src="/assets/preview.png">
+    <img alt="Portifólio" src="./assests/preview.png">
 
 </p>
 
