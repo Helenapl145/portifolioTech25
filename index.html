@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assests/favicon.png" type="image/x-icon">
+    <title>Helena Lima</title>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="./assests/logo.svg" alt="Logo com as siglas HPL - Helena Paulino de Lima">
+        <ul>
+            <li><a href="#sobreMim">Sobre mim</a></li>
+            <li><a href="#meusProjetos">Projetos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="./assests/foto.svg" alt="Foto da Helena sorrindo com os braços cruzados">
+        <div>
+            <h1>Helena Paulino de Lima</h1>
+            <h3>Análista de Dados e Desenvolvedora WEB</h3>
+            <p>Apaixonada em tecnologia desde da robótica até a análise de dados, passando pelo desenvolvimento WEB.</p>
+            <span ><a href="./assests/Curriculo.pdf" download="Curriculo.pdf">Download CV </a><i class="fi fi-rr-arrow-down-to-square"></i> </span>
+        </div>
+    </header>
+
+    <div class="line"></div>
+
+    <main>
+        <section id="sobreMim">
+            <h2>Sobre Mim</h2>
+            <div>
+                <p>     &nbsp &nbsp Olá, sou Helena Paulino de Lima formada em Análise e Desenvolvimento de Sistemas e encontrei na tecnologia uma forma de transformar ideias em projetos práticos. Atuo na área de Business Intelligence, utilizando SQL, Excel e entre outras ferramentas para análise de dados, criação de dashboards e apoio à tomada de decisões estratégicas.
+                    <br><br>&nbsp&nbsp Além da minha atuação com BI, também tenho experiência em desenvolvimento front-end, trabalhando com React, JavaScript, HTML e CSS para construir interfaces modernas, responsivas e centradas na experiência do usuário.
+                    <br><br>&nbsp&nbsp Busco sempre aprender coisas novas buscando sempre evoluir como profissional e desenvolver projetos  que agreguem valor com base em meus conhecimentos.</p>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section id="meusProjetos">
+            <div class="title">
+                <h2>Meus Projetos</h2>
+                <p>Para ver mais <a href="https://github.com/Helenapl145" target="_blank">clique aqui</a></p>
+            </div>
+            <div id="slide">
+                
+                <div class="carousel">
+                    <img id="left" src="" alt="">
+                    
+                    <a id="centerLink" href="#" target="_blank">
+                        <img id="center" class="center" src="" alt="">
+                    </a>
+
+                    <img id="right" src="" alt="">
+
+                    <div class="nav-buttons">
+                        <button onclick="imgAnterior()" id="prevBtn" aria-label="Slide anterior"><i class="fi fi-rr-angle-left"></i></button>
+                        <button onclick="imgProxima()" id="nextBtn" aria-label="Próximo slide"><i class="fi fi-rr-angle-right"></i></button>
+                    </div>
+                </div>
+
+
+                  <div class="hidden-images" aria-hidden="true">
+                    <div>
+                        <a href="https://helenapl145.github.io/projetoOportuniza/" target="_blank">
+                            <img src="./assests/projeto-1.png" alt="Projeto oportuniza usado para ajudar pessoas encontrem oportunidades de estudo.">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://eita-mundo.vercel.app/" target="_blank">
+                            <img src="./assests/projeto-2.png" alt="Projeto eita mundo feito para servir como loja e-commerce de caixas com itens temáticos.">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://helenapl145.github.io/flappyBird/" target="_blank">
+                            <img src="./assests/projeto-3.png" alt="Jogo flappy bird feito utilizando tecnologias web. ">
+                        </a>
+                    </div>
+                </div>
+
+               
+            </div>
+        </section>
+    </main>
+
+
+    <footer id="contatos">
+        <div>
+            <h2>Entre em contato</h2>
+            <p>Venha me conhecer mais</p>
+        </div>
+
+        <ul>
+            <li><a href="https://github.com/Helenapl145" target="_blank"><img src="./assests/github.svg" alt="Logo do Github"></a></li>
+            <li><a href="https://www.linkedin.com/in/helena-lima-9269971b4/" target="_blank"><img src="./assests/linkedin.svg" alt="Logo do Linkedin"></a></li>
+            <li><a href="mailto:helenapl145@gmail.com" target="_blank"><img src="./assests/email.svg" alt="Logo do email"></a></li>
+        </ul>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

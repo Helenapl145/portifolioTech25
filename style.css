@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: #ff00ff;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.line {
+  width: 100vw;
+  border: #cd89f457 1px solid;
+  margin-block: 3rem;
+}
+
+body {
+  background-color: #4b0082;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding-top: 2rem;
+}
+
+nav img{
+  height: 90px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+nav ul li a {
+  color: #fbc0fb;
+  font-size: 1.7rem;
+}
+
+nav ul li a:hover {
+  color: #00a8e8;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-block: 5rem;
+}
+
+header img {
+  height: 250px;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+header div h1 {
+  color: #ff00ff;
+  font-size: 4rem;
+}
+
+header div h3 {
+  color: #c3eeff;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+header div p {
+  color: #ffffff;
+  text-align: justify;
+  margin-block: 2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+header div span {
+  background-color: #bb62ee;
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+header div span a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+header div span a:hover {
+  filter: brightness(1.2);
+}
+
+header div span i {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#sobreMim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#sobreMim div {
+  background-color: #00a8e8;
+  border: 5px #002b5b solid;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1.8rem;
+}
+
+#sobreMim div p {
+  text-align: justify;
+  font-size: 1.8rem;
+  color: white;
+}
+
+#meusProjetos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+#meusProjetos .title p {
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+}
+
+#meusProjetos .title a {
+  color: #00a8e8;
+  font-weight: bold;
+}
+
+#meusProjetos .title a:hover {
+  text-decoration: underline;
+}
+
+.carousel {
+  position: relative; 
+  width: fit-content;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 600px;
+  width: 55vw;
+  overflow: hidden;
+}
+
+#centerLink {
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+
+  opacity: 0.6;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+}
+
+.carousel img.center {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 2;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.nav-buttons button {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.hidden-images {
+  display: none;
+}
+
+#contatos {
+  background-color: #002b5b;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+#contatos div h2 {
+  color: #c3eeff;
+  margin-bottom: 0.5rem;
+}
+#contatos div p {
+  font-size: 1.2rem;
+}
+
+#contatos ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#contatos ul li img {
+  height: 65px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    justify-content: space-between;
+    padding-inline: 2rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+
+  header {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  header img {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  header div {
+    width: 90%;
+    align-items: center;
+  }
+
+  #sobreMim div {
+    width: 90%;
+  }
+
+  #sobreMim div p {
+    font-size: 1.4rem;
+  }
+
+  #contatos div h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 900px) {
+
+    .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw
+  }
+
+  .carousel img {
+    width: 300px;
+    height: 500px;
+  }
+
+  .nav-buttons {
+    justify-content: space-around;
+  }
+
+  #left,
+  #right {
+    display: none; 
+  }
+
+  .nav-buttons {
+   justify-content: space-between;
+   padding: 0 100px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 2000px) { 
+   .carousel {
+    width: 90vw
+  }
+}
