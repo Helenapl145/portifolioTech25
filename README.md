@@ -34,7 +34,7 @@
 ## 💻 Projeto
 
 
-- [Visite o projeto online]()
+- [Visite o projeto online](https://portifolio-tech-six.vercel.app/)
 
 Esse projeto está sob a licença MIT.
 
