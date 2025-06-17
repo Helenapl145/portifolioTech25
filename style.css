@@ -295,7 +295,7 @@ header div span i {
 }
 
 
-@media (min-width: 400px) and (max-width: 900px) {
+@media (min-width: 200px) and (max-width: 900px) {
   nav {
     justify-content: space-between;
     padding-inline: 2rem;
