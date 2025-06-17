@@ -296,9 +296,13 @@ header div span i {
 
 
 @media (min-width: 200px) and (max-width: 900px) {
+  h2{
+    font-size: 3rem;
+  }
+  
   nav {
     justify-content: space-between;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
   }
 
   nav img{
@@ -306,7 +310,7 @@ header div span i {
   }
 
   nav ul {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   nav ul li a {
@@ -358,16 +362,20 @@ header div span i {
   }
 
   #contatos div h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
   }
 
   #contatos div p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  #contatos ul{
+    gap: 0.5rem;
   }
 
   #contatos ul li img {
-    height: 40px;
+    height: 35px;
   }
 }
 
