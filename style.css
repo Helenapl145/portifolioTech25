@@ -282,6 +282,23 @@ header div span i {
 }
 
 
+
+@media (max-width: 500px) {
+    #contatos {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  #contatos div p {
+    text-align: center;
+  }
+
+} 
+
+
 @media (max-width: 800px) {
   
   h2{
@@ -398,6 +415,7 @@ header div span i {
   #sobreMim div p {
     font-size: 1.4rem;
   }
+
 
   #contatos div h2 {
     font-size: 1.5rem;
