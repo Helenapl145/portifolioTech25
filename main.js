@@ -64,3 +64,19 @@ document.getElementById('prevBtn').addEventListener('click', () => {
 
 updateCarousel();
 startAutoSlide();
+
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navLinks = document.getElementById("navLinks");
+
+hamburgerBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+
+const navItems = navLinks.querySelectorAll("a");
+
+navItems.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("show");
+  });
+});
